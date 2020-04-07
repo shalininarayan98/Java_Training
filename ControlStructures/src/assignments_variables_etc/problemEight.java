@@ -4,9 +4,9 @@ public class problemEight {
 	
 	public static void main (String[] args) {
 		
-		int one_dollar_count = 3;
-		int five_dollar_count = 3;
-		int amount_made = 19;
+		int one_dollar_count = 0;
+		int five_dollar_count = 0;
+		int amount_made = 0;
 		
 		//float five_dollar_remainder = five_dollar_count*5>=amount_made
 		
