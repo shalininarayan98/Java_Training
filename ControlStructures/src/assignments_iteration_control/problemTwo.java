@@ -4,7 +4,7 @@ public class problemTwo {
 	
 	public static void main (String[] args) {
 		
-		int number = 500;
+		int number = 123;
 		int sum = 0;
 		
 		while (number>0) {
@@ -18,3 +18,4 @@ public class problemTwo {
 	}
 
 }
+

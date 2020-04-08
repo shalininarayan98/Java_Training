@@ -4,8 +4,8 @@ public class problemFour {
 	
 	public static void main (String[] args) {
 		
-		int input;
-		int sum = 0; 
+		//int input;
+		//int sum = 0; 
 		
 	
 		//for (int i = 0; i < 10; i++) {
@@ -16,6 +16,7 @@ public class problemFour {
 		
         //for(int i = 0; i < 10; ++i){
         //    System.out.println(new CoordinatePoint().getId());
+		
 
 		
 		
