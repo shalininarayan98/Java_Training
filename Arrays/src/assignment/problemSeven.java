@@ -2,35 +2,36 @@ package assignment;
 
 public class problemSeven {
 
-	public static void getOccuringChar(String str) {
+	public static int findOccuring(String word) {
 
 		int count[] = new int[256];
 
-		int len = str.length();
+		int len = word.length();
 
 		for (int i = 0; i < len; i++)
-			count[str.charAt(i)]++;
+			count[word.charAt(i)]++;
 
-		char ch[] = new char[str.length()];
+		char ch[] = new char[word.length()];
 		for (int i = 0; i < len; i++) {
-			ch[i] = str.charAt(i);
-			int letter = 0;
+			ch[i] = word.charAt(i);
+			char letter = 0;
 			for (int j = 0; j <= i; j++) {
 
-				if (str.charAt(i) == ch[j])
+				if (word.charAt(i) == ch[j])
 					letter++;
 			}
 
 			if (letter == 1)
-				System.out.println("Number of Occurrence of " + str.charAt(i) + " is:" + count[str.charAt(i)]);
+				System.out.println("Number of Occurrence of " + word.charAt(i) + " is:" + count[word.charAt(i)]);
 		}
+		return len;
 	}
 
 	public static void main(String[] args) {
 
-		String str = "hello";
+		String word = "hello";
 
-		getOccuringChar(str);
+		findOccuring(word);
 	}
 
 }

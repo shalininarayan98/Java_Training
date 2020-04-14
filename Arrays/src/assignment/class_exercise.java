@@ -7,12 +7,12 @@ public class class_exercise {
 		int number = 123;
 		
 		int newUniqueNumber;
-		int 
+		//int 
 		
 		int i=0;
 		int count = 0;
 		
-		UniqueNumber = new int {
+		//UniqueNumber = new int {
 		
 		while (number !=0) {
 			

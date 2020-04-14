@@ -19,7 +19,19 @@ public class problemFour {
 		
 
 		
+		int input = 5;
+		int sum = 0;
 		
+		
+		for (int i = 0; i<=input; i++) {
+			
+			sum = 1000 + i;
+			//System.out.println("T" + sum);
+			
+			
+		}
+		
+		System.out.println("T" + sum);
 		
 		
 	}

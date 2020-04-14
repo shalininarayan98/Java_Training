@@ -1,24 +1,7 @@
 package assignment;
 
 public class problemThree {
-
-	/*public static void main(String[] args) {
-
-		int arr[] = { 12, 37, 11, 101, 20 };
-
-		for (int i = 0; i < arr.length; i++) {
-
-			if (arr[i] % 2 == 0) {
-				
-
-				System.out.println(arr[i]);
-
-			}
-
-		}
-
-	}*/
-
+	
 	public static void main(String[] args) {
 		
 		int[] numArray = {4,6,8,7};
@@ -40,7 +23,8 @@ public class problemThree {
 		//FIND COUNT
 		for (int num: numArray) {
 			
-			if(num%2==0) countOfEven++;
+			if(num%2==0) 
+				countOfEven++;
 		}
 		
 		//DECLARE IT AND STORE IN  NEW VARIABLE UNTIL YOU KNOW HOW MANY ARE EVEN 
@@ -61,7 +45,7 @@ public class problemThree {
 		//RETURN EVEN NUMBERS
 		return newNumArray;
 		
-		
-		
+	
+	
 	}
-	}
+}

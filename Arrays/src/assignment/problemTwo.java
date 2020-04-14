@@ -1,54 +1,61 @@
 package assignment;
 
 public class problemTwo {
-
+	
 	public static void main(String[] args) {
-
-		double arr[] = { 1000.0, 110.0, 1200.0, 2200.0 };
-
-		double sum = 0;
-
-		for (int i = 0; i < arr.length; i++) {
-
-			sum = sum + arr[i];
-
+		
+		double salary[] = {23500.0, 25080.0, 28760.0, 22340.0, 19890.0}; 
+		
+		double sum = 0; 
+		double average = 0;
+		double count = 0;
+		int countEqual=0;
+		int countLesser = 0;
+		int countGreater = 0;
+		
+		for (int i=0; i<salary.length; i++) {
+			
+			sum = sum + salary[i];
+			average = sum/(salary.length);
+			
 		}
-
-		// AVERAGE
-		double average = (sum / arr.length);
-
-		System.out.println("the average salary is " + average);
-
-		System.out.println("Salary greater than the average are: ");
-
-		// ABOVE AVERAGE
-		for (int i = 0; i < arr.length; i++) {
-
-			int count = 0;
-
-			if (arr[i] > average) {
-
-				System.out.println(arr[i]);
-
+		System.out.println("sum is: " + sum);
+		System.out.println("average salary is: " + average);
+		
+		
+		for (int i=0; i < salary.length; i++) {
+			
+			if (salary[i]==average) {
+				
+				countEqual++;
 			}
-
+					
 		}
-		System.out.println("Salary below the average are: ");
-
-		// BELOW AVERAGE
-		for (int i = 0; i < arr.length; i++) {
-
-			if (arr[i] < average) {
-
-				System.out.println(arr[i]);
+		System.out.println("number of people having a salary equal to the averag is: " + countEqual);
+		
+		for (int i=0; i < salary.length; i++) {
+			
+			if (salary[i]<average) {
+				
+				countLesser++;
 			}
-
+					
 		}
-
+		System.out.println("number of people having a salary lesser than the average is: " + countLesser);
+		
+		for (int i=0; i < salary.length; i++) {
+			
+			if (salary[i]>average) {
+				
+				countGreater++;
+			}
+					
+		}
+		System.out.println("number of people having a salary greater than the average is: " + countGreater);
+				
 	}
-
+						
 }
-
 	
 	
 
