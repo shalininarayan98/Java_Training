@@ -106,7 +106,7 @@ public class BookMyMovie {
 		}
 		
 		
-		this.calculateDiscount();
+		
 		this.totalAmount= baseFare * noOfTickets - (baseFare *noOfTickets*(discount/100));
 		//System.out.println(totalAmount);
 		return totalAmount;

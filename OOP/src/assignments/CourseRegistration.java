@@ -8,6 +8,7 @@ public class CourseRegistration {
 	private double courseFee;
 	private int courseID;
 	private boolean hostelRequired;
+	private double discount;
 
 //STUDENTNAME
 	public String getStudentName() {
@@ -55,6 +56,11 @@ public class CourseRegistration {
 
 		this.courseID = courseId;
 	}
+	
+	public double getDiscount() {
+		
+		return this.discount;
+	}
 
 //HOSTNAME
 
@@ -101,7 +107,7 @@ public class CourseRegistration {
 
 //CALCULATE COURSE FEE
 
-	public void calculateCourseFee() {
+	public double calculateCourseFee() {
 
 		int discount = 0;
 		double fee = 0;
@@ -110,19 +116,19 @@ public class CourseRegistration {
 		if (validateCourseId() == true && validateMarks() == true) {
 
 			if (this.qualifyingMarks >= 64) {
-				discount = discount + 0;
+				this.discount = 0;
 			}
 
 			else if (this.qualifyingMarks >= 65) {
-				discount = discount + 5;
+				this.discount = 5;
 			}
 
 			else if (this.qualifyingMarks >= 70) {
-				discount = discount + 10;
+				this.discount = 10;
 			}
 
 			else if (this.qualifyingMarks >= 85) {
-				discount = discount + 15;
+				this.discount = 15;
 			}
 			
 			
@@ -150,13 +156,16 @@ public class CourseRegistration {
 				break;
 			}
 
-			this.courseFee = (fee * discount)/100;
+			//this.courseFee = (fee * discount)/100;
 			//return courseFee;
 			//this.courseFee = fee;
 			//System.out.println(fee);
 			
 			
+			this.courseFee = (fee*this.discount)/100;
+			
 		}
+		return fee;
 
 	}
 }
