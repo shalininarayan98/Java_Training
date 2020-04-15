@@ -58,6 +58,8 @@ public class class_exercises {
 	 *similarly if you put a plate in you put it on the top not in the 
 	 *middle
 	 *LIFO (last in first out)
+	 *
+	 *
 	 */
 	
 	public static void displayagain () {
@@ -78,7 +80,7 @@ public class class_exercises {
 		display();
 		//displayagain();
 		System.out.println();
-		
+		                                                                                
 	}
 	
 	
@@ -102,6 +104,30 @@ public class class_exercises {
 		// so it is a waste of space so this will be collected by the garbage collector
 
 	}
+	
+	/*use a class to create a new data type
+	 * can't use array because all the datatypes are different
+	 * called user defined datatype 
+	 * 
+	 */
+	
+	
+	public static void main4(String[] args) {
+		
+		
+		
+	}
+	
+	/*if you don't create a new variable the variable is not used
+	 *new operator allocates memory- points to location
+	 * 
+	 * 
+	 */
+	
+	/*UML-CLASS/ATTRIBUTES/BEHAVIOUR
+	 * Behaviour can be public or private method
+	 * attributes usually private (can be public)
+	 */
 	
 	
 
