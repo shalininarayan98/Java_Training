@@ -4,7 +4,7 @@ public class problemEight {
 	
 	public static void main (String[] args) {
 		
-		String str="five"; 
+		String str="two"; 
 		String[] items = {"two", "three", "one"};
 		
 		boolean flag=false;

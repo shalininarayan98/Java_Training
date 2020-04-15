@@ -5,16 +5,19 @@ public class problemFive {
 	
     public static void main(String []args){
         int year =2000; 
-        int[] yearArray = { 2013, 2015, 1621, 2019, 2012 };
         
-            if(isLeapYear(year)) {
-              System.out.println(true);
-            }
-            
-            else {
-              System.out.println(false);
-              
-        }
+       System.out.println(isLeapYear(2020));
+
+        int[] yearArray = { 2016, 2015, 2020, 2019, 2012 };
+        
+           int[] finalArr =findLeapYear(yearArray);
+           
+           for(int i=0;i<finalArr.length;i++) {
+        	   if(finalArr[i]==0) continue;
+        	   System.out.println(finalArr[i]);
+           }
+           
+           
             
             
         }
@@ -22,18 +25,24 @@ public class problemFive {
 
      
 
-    public static boolean isLeapYear(int year) {
-        return (year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0));
+    public static int isLeapYear(int year) {
+        return ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))? 1 : 0;
     }
     
     
-    public static boolean findLeapYear(int[] yearArray) {
-        
-    	
-    	for (int i = 0; i <= yearArray.length - 1; i++) {
-    		if ((yearArray[i] % 4 == 0) && (yearArray[i] % 100 != 0) || (yearArray[i] % 400 == 0));
-    		System.out.println();
+    public static int[] findLeapYear(int[] yearArray) {
+        int retArr[]=new int[yearArray.length];
+    	int j=0;
+    	for (int i = 0; i < yearArray.length ; i++) {
+    		if (isLeapYear(yearArray[i])==1){
+    			//System.out.println();
+    			retArr[j++]=yearArray[i];
+    			
+    		}
+    		
     	}
+    	
+    	return retArr;
 		
 
     }
