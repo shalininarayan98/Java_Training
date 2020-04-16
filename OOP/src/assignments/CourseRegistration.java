@@ -88,20 +88,26 @@ public class CourseRegistration {
 
 	public boolean validateMarks() {
 
-		//int discount = 0;
+		
 
-		if (this.qualifyingMarks >= 0 && this.qualifyingMarks <= 100);
+		if (this.qualifyingMarks >= 65 && this.qualifyingMarks <= 100) {
+			System.out.println("eligible for admission!");	
+		}
 		return true;
-
 	}
 
 //VALIDATE COURSE ID
 
 	public boolean validateCourseId() {
 
-		if (this.courseID >= 1001 && this.courseID <= 1005)
-			;
-		return true;
+		if (this.courseID >= 1001 && this.courseID <= 1005) {
+			return true;
+	
+		}
+		else {
+			//System.out.println("Invalid Course ID, please try again");
+			return false;
+		}
 
 	}
 
@@ -156,11 +162,7 @@ public class CourseRegistration {
 				break;
 			}
 
-			//this.courseFee = (fee * discount)/100;
-			//return courseFee;
-			//this.courseFee = fee;
-			//System.out.println(fee);
-			
+
 			
 			this.courseFee = (fee*this.discount)/100;
 			

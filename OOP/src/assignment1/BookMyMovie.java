@@ -101,12 +101,14 @@ public class BookMyMovie {
 		case(103):
 			baseFare=150;
 			break;
+		default:
+		System.out.println("invalid movie ID");
 			
 		
 		}
 		
 		
-		
+		this.calculateDiscount();
 		this.totalAmount= baseFare * noOfTickets - (baseFare *noOfTickets*(discount/100));
 		//System.out.println(totalAmount);
 		return totalAmount;

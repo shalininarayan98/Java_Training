@@ -129,6 +129,34 @@ public class class_exercises {
 	 * attributes usually private (can be public)
 	 */
 	
+	/*STATIC is a part of the class, not the object
+	 * so it means it is accessible by all the objects of the class
+	 * auto-generation is found in static usually 
+	 * any attribute of any class requires an object
+	 * now there is a static member, it can be accessed through class name
+	 * even before the objects are created it can already be accessed
+	 * 
+	 * 
+	 * 
+	 */
+	
+	/*memory is only allocated when you create an object
+	 * a static method cannot use non static members
+	 * non static methods can you static members 
+	 */
+	
+	/*RELATIONSHIP- there are three
+	 *
+	 * ASSOCIATION- it uses a relationship (uses-a)
+	 * on the UML diagram it has a line joining 2 classes
+	 * 
+	 * AGGREGATION -class is part of another car (has-a)
+	 * car has a class engine has a class, engine is in the car
+	 * UML diagram shows a diamond and a line- if there is a diamond 
+	 * 
+	 * 
+	 * INHERTITANCE (is-a)
+	 */
 	
 
 }
