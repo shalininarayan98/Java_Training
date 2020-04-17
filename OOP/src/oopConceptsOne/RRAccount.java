@@ -39,8 +39,10 @@ public class RRAccount {
 
 		length = count;
 
-		if (length != 6);
+		if (length == 6);
 		System.out.println("The pin code you entered by you is false");
+		
+		
 		return true;
 	}
 
