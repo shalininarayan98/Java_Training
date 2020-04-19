@@ -27,23 +27,26 @@ public class RRAccount {
 
 	public boolean isValidAddress() {
 
+
 		int n = address.getPinCode();
 		int count = 0;
-		int length;
-
-		while (n > 0) {
-			n = n % 10;
-			count++;
-			n = n / 10;
+		
+		while (n !=0) {
+			
+			n/=10;
+			++count;
 		}
-
-		length = count;
-
-		if (length == 6);
-		System.out.println("The pin code you entered by you is false");
 		
 		
-		return true;
+		
+		if (count !=6) {
+			System.out.println("This is not a valid pin!");
+			System.out.println("You have only enetered: " + count + " digits");
+				
+		}
+		return true;	
+
+		
 	}
 
 }
