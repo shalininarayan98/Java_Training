@@ -2,7 +2,7 @@ package oopConceptsThree;
 
 public class InfyDanceRegistration {
 	
-	private int counter;
+	private static int counter = 1;
 	private String name;
 	private long contactNumber;
 	private String city;
@@ -14,6 +14,20 @@ public class InfyDanceRegistration {
 		this.city = city;
 	}
 	
+	public String getName() {
+		return this.name;
+	}
+	
+	public String generateRegistrationId() {
+		
+		int counterInt = 10000+this.counter;
+		String counterString = "D" + Integer.toString(counterInt);
+
+		//System.out.println("D" + counterString);
+		return counterString;
+
+		
+	}
 	
 	
 	
