@@ -158,5 +158,16 @@ public class class_exercises {
 	 * INHERTITANCE (is-a)
 	 */
 	
+	
+	/*POLYMORPHISM
+	 * 1) MEHTOD OVERLOADING- same name different behaviours - different parameters
+	 * 2) Method overriding 
+	 * 
+	 * 
+	 * 
+	 */
+	
+	
+	
 
 }

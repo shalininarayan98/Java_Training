@@ -23,8 +23,9 @@ public class Loan {
 		
 	}
 
-	public Loan() {
-		//private static int loanCounter;
+	public static Loan getLoanInstance() {
+		return null;
+
 		
 	}
 	
@@ -77,7 +78,7 @@ public class Loan {
 	}
 	
 	public int getNumberOfObjects() {
-		return loanCounter;
+		return this.loanCounter;
 	}
 	
 
