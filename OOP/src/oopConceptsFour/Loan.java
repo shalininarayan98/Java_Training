@@ -10,6 +10,10 @@ public class Loan {
 	private float interest;
 	private static int loanCounter;
 	
+	private Loan() {
+		loanCounter++;
+	}
+	
 	
 	
 	public Loan(int accountNo, int customerNo, float loanAmount, int loanDuration, float interest, int loanCounter) {
@@ -19,14 +23,17 @@ public class Loan {
 		this.loanAmount = loanAmount;
 		this.loanDuration = loanDuration;
 		this.interest = interest;
-		this.loanCounter = loanCounter++;
+		loanCounter++;
 		
 	}
 
 	public static Loan getLoanInstance() {
-		return null;
-
-		
+		Loan loan = new Loan();
+		return loan;
+	}
+	
+	public int getNumberOfObjects() {
+		return loanCounter;
 	}
 	
 	public int getLoanNo() {
@@ -76,10 +83,6 @@ public class Loan {
 	public void setInterest(float interest) {
 		this.interest = interest;
 	}
-	
-	public int getNumberOfObjects() {
-		return this.loanCounter;
-	}
-	
+
 
 }

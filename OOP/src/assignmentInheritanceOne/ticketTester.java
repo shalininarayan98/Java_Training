@@ -4,7 +4,7 @@ public class ticketTester {
 
 	public static void main(String[] args) {
 
-		Ticket t = new Ticket(1, 10);
+		Ticket t = new Ticket(10, 1);
 
 		if (t.validateTravelPoints() == true) {
 

@@ -3,18 +3,14 @@ package assignmentInheritanceOne;
 public class pizzaTester {
 
 	
-	public Pizza[] pizzaData(){
+	public Pizza[] pizzaData() {
+		
+		pizzaTester(Pizza[] parray) {
+			this.pizzaData=parray;
+		}
 		
 		
-		Pizza[] pizzaData = {};
-		/*String Pizza[] = new String[pizzaData.length];
-		
-		for (int i = 0; i<pizzaData.length;i++) {
-			Pizza[i] = (pizzaData[i]).toString(); 
-			//System.out.println(Pizza[i]);
-		}*/
-		
-		return pizzaData;
+
 		
 		
 	
@@ -39,6 +35,16 @@ public class pizzaTester {
 	}
 	
 	public static void main(String[] args) {
+		
+		Pizza p1 = new Pizza("a", 1, "Small");
+		Pizza p2 = new Pizza("b", 1, "Medium");		
+		Pizza p3 = new Pizza("c", 1, "Large");
+		
+		Pizza[] pizzaList = {p1,p2,p3};
+		
+		pizzaTester t = new pizzaTester(pizzaList);
+		
+		
 
 	}
 

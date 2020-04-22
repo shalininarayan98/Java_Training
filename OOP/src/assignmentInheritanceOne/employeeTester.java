@@ -11,11 +11,10 @@ public class employeeTester {
 		//System.out.println(e.getSalary());
 		
 		PermanentEmployee pm = new PermanentEmployee();
+		
 		pm.setBasicPay(10000);
 		pm.setExperience(3);
 		pm.setHra(1500);
 		System.out.println(e.getSalary());
-
 	}
-
 }

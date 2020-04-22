@@ -43,10 +43,10 @@ public class PermanentEmployee extends Employee {
 			variable_component = (int)(0.12 * this.basicPay);
 		}
 		
-		double salary = this.getSalary();
+		//double salary = this.getSalary();
 		
-		salary = (variable_component + this.basicPay + this.hra);
-		
+		double salary = (variable_component + this.basicPay + this.hra);
+		this.setSalary(salary);
 		
 		
 		

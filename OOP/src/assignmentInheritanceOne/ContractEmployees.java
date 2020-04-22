@@ -21,10 +21,9 @@ public class ContractEmployees extends Employee {
 	}
 	
 	public void calculateSalary() {
-
-		double salary = this.getSalary();
 		
-		salary = (this.hours+this.wages);
+		double salary = (this.hours+this.wages);
+		this.setSalary(salary);
 		
 		
 	}

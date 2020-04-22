@@ -8,7 +8,8 @@ public class Ticket {
 	
 	
 	public Ticket() {
-		
+		this.startPoint=3;
+		this.endPoint=9;
 		
 	}
 	
