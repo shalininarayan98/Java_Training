@@ -9,7 +9,7 @@ public class problemFour {
 		
 		int[] array_nums = { 11, 11, 23, 28, 28, 30, 31, 35, 70, 71 };
 		
-		System.out.println("Original Array: " + Arrays.toString(array_nums));
+		//System.out.println("Original Array: " + Arrays.toString(array_nums));
 		
 		int result = 1;
 		int count = 0;
